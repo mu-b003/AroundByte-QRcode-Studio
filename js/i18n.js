@@ -42,6 +42,8 @@ Object.assign(AR, {
   'Note:':'ملاحظة:',
   '"QR Code" is a registered trademark of DENSO WAVE INCORPORATED.':
   '"QR Code" علامة تجارية مسجلة لشركة DENSO WAVE INCORPORATED.',
+  '“QR Code” is a registered trademark of DENSO WAVE INCORPORATED.':
+  '“QR Code” علامة تجارية مسجلة لشركة DENSO WAVE INCORPORATED.',
   'November 2026':'نوفمبر 2026',
 
   // Privacy Policy
@@ -83,12 +85,7 @@ Object.assign(AR, {
   '10. Contact':'10. التواصل',
   'If you have questions about this Privacy Policy, contact us at':
   'إذا كانت لديك أسئلة حول سياسة الخصوصية هذه، يمكنك التواصل معنا عبر:',
-  Object.assign(AR, {
-  '10. Contact': '10. التواصل',
 
-  '“QR Code” is a registered trademark of DENSO WAVE INCORPORATED.':
-  '“QR Code” علامة تجارية مسجلة لشركة DENSO WAVE INCORPORATED.'
-});
   // Terms of Use
   'Terms of Use':'شروط الاستخدام',
   'Terms that apply when you use AroundByte QRcode Studio.':
