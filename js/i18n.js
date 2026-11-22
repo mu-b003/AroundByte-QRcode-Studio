@@ -32,6 +32,169 @@ Object.assign(AR, {
 'Codabar Generator':'منشئ Codabar', 'ITF (Interleaved 2 of 5) Generator':'منشئ ITF (متداخل 2 من 5)', 'ITF Generator':'منشئ ITF', 'Enter one value per line or upload a CSV, then download every code in a single ZIP (up to 500 per batch).':'أدخل قيمة واحدة في كل سطر أو ارفع ملف CSV، ثم نزّل جميع الرموز في ملف ZIP واحد (حتى 500 في الدفعة).', 'Toggle light/dark theme':'تبديل المظهر الفاتح/الداكن', 'Switch language':'تبديل اللغة', '"QR Code" is a registered trademark of DENSO WAVE INCORPORATED.':'"QR Code" علامة تجارية مسجلة لشركة DENSO WAVE INCORPORATED.'
 });
 
+Object.assign(AR, {
+  // About
+  'AroundByte QRcode Studio creates, customizes and scans QR codes and barcodes. It supports URL, text, Wi-Fi, contact (vCard), email, phone and SMS QR codes; EAN-13, EAN-8, UPC-A, UPC-E, Code 128, Code 39, ITF-14, ITF and Codabar barcodes; camera and image scanning; and bulk generation to ZIP.':
+  'ينشئ AroundByte QRcode Studio رموز QR والباركود ويخصصها ويمسحها. ويدعم رموز QR للروابط والنصوص وشبكات Wi-Fi وجهات الاتصال (vCard) والبريد الإلكتروني والهاتف والرسائل النصية؛ ويدعم باركود EAN-13 وEAN-8 وUPC-A وUPC-E وCode 128 وCode 39 وITF-14 وITF وCodabar؛ كما يدعم المسح بالكاميرا والصور والإنشاء الجماعي إلى ZIP.',
+  'It is a static application with no account system. Your content and images are processed locally in your browser and are not sent to a server.':
+  'هذا تطبيق ثابت لا يتطلب إنشاء حساب. تتم معالجة المحتوى والصور محلياً داخل متصفحك ولا تُرسل إلى أي خادم.',
+  'Looking for ID cards? Visit':'هل تبحث عن بطاقات الهوية؟ تفضل بزيارة',
+  'Note:':'ملاحظة:',
+  '"QR Code" is a registered trademark of DENSO WAVE INCORPORATED.':
+  '"QR Code" علامة تجارية مسجلة لشركة DENSO WAVE INCORPORATED.',
+  'November 2026':'نوفمبر 2026',
+
+  // Privacy Policy
+  'Privacy Policy':'سياسة الخصوصية',
+  'How AroundByte QRcode Studio handles information and files.':
+  'توضح هذه السياسة كيفية تعامل AroundByte QRcode Studio مع المعلومات والملفات.',
+  'Last updated:':'آخر تحديث:',
+  '1. Introduction':'1. مقدمة',
+  'AroundByte QRcode Studio is a browser-based toolkit for creating, customizing, scanning and managing QR codes and barcodes. This Privacy Policy explains how information is handled when you use the website.':
+  'AroundByte QRcode Studio مجموعة أدوات تعمل عبر المتصفح لإنشاء رموز QR والباركود وتخصيصها ومسحها وإدارتها. توضح سياسة الخصوصية هذه كيفية التعامل مع المعلومات عند استخدامك للموقع.',
+  '2. No Account Required':'2. لا حاجة إلى إنشاء حساب',
+  'You do not need to create an account to use the core tools. We do not ask you to register or provide personal information to generate or scan codes.':
+  'لا تحتاج إلى إنشاء حساب لاستخدام الأدوات الأساسية. لا نطلب منك التسجيل أو تقديم معلومات شخصية لإنشاء الرموز أو مسحها.',
+  '3. Local Processing':'3. المعالجة المحلية',
+  'Where supported, text, URLs, contact details and other information you enter are processed locally in your browser. Files and images you select are also processed in your browser. In the normal operation of these tools, your content and selected files are not intentionally uploaded to our servers.':
+  'عندما تكون هذه الميزة مدعومة، تتم معالجة النصوص والروابط وبيانات جهات الاتصال والمعلومات الأخرى التي تدخلها محلياً في متصفحك. كما تتم معالجة الملفات والصور التي تختارها داخل متصفحك. وفي التشغيل المعتاد لهذه الأدوات، لا يتم رفع المحتوى والملفات التي تختارها عمداً إلى خوادمنا.',
+  'Generated QR codes and barcodes remain under your control. You can download the results using your browser.':
+  'تظل رموز QR والباركود التي يتم إنشاؤها تحت سيطرتك. ويمكنك تنزيل النتائج باستخدام متصفحك.',
+  '4. Local Storage and Preferences':'4. التخزين المحلي والتفضيلات',
+  "The website may use your browser's local storage to remember preferences such as language, theme or interface settings. These preferences remain in your browser and can be cleared through your browser settings.":
+  'قد يستخدم الموقع مساحة التخزين المحلية في متصفحك لتذكر التفضيلات، مثل اللغة أو المظهر أو إعدادات الواجهة. وتظل هذه التفضيلات محفوظة في متصفحك، ويمكنك مسحها من إعدادات المتصفح.',
+  '5. Advertising and Cookies':'5. الإعلانات وملفات تعريف الارتباط',
+  'This website may display advertisements provided by third parties, including Google AdSense. Advertising partners may use cookies or similar technologies to display ads, measure advertising performance or provide more relevant advertising, subject to their own privacy policies and your available settings.':
+  'قد يعرض هذا الموقع إعلانات مقدمة من جهات خارجية، بما في ذلك Google AdSense. وقد يستخدم شركاء الإعلان ملفات تعريف الارتباط أو تقنيات مشابهة لعرض الإعلانات أو قياس أدائها أو تقديم إعلانات أكثر ملاءمة، وذلك وفقاً لسياسات الخصوصية الخاصة بهم والإعدادات المتاحة لك.',
+  "You can review Google's information about how it uses data from sites and apps that use its services through Google's privacy resources and advertising settings.":
+  'يمكنك الاطلاع على معلومات Google حول كيفية استخدامها للبيانات من المواقع والتطبيقات التي تستخدم خدماتها، وذلك من خلال موارد الخصوصية وإعدادات الإعلانات الخاصة بها.',
+  '6. Third-Party Websites':'6. مواقع الجهات الخارجية',
+  'Our website may contain links to third-party websites. We do not control their content, privacy practices or security. Please review the privacy policies of those websites before providing information to them.':
+  'قد يحتوي موقعنا على روابط لمواقع تابعة لجهات خارجية. نحن لا نتحكم في محتواها أو ممارسات الخصوصية أو إجراءات الأمان لديها. يرجى مراجعة سياسات الخصوصية الخاصة بتلك المواقع قبل تقديم أي معلومات إليها.',
+  '7. Security':'7. الأمان',
+  'We take reasonable steps to maintain the website, but no website, browser or method of electronic transmission can be guaranteed to be completely secure. Please avoid entering confidential or highly sensitive information into online tools.':
+  'نتخذ خطوات معقولة للحفاظ على الموقع، ولكن لا يمكن ضمان الأمان الكامل لأي موقع أو متصفح أو وسيلة نقل إلكترونية. يرجى تجنب إدخال المعلومات السرية أو شديدة الحساسية في الأدوات عبر الإنترنت.',
+  "8. Children's Privacy":'8. خصوصية الأطفال',
+  'This website is intended as a general-purpose tool. We do not knowingly collect personal information from children. If you believe a child has provided personal information to us, please contact us so we can review the concern.':
+  'هذا الموقع أداة عامة الاستخدام. لا نجمع عن علم معلومات شخصية من الأطفال. إذا كنت تعتقد أن طفلاً قد قدم لنا معلومات شخصية، يرجى التواصل معنا حتى نتمكن من مراجعة الأمر.',
+  '9. Changes to This Policy':'9. التغييرات على هذه السياسة',
+  'We may update this Privacy Policy from time to time. Any changes will be published on this page with a revised update date.':
+  'قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. وسيتم نشر أي تغييرات على هذه الصفحة مع تعديل تاريخ آخر تحديث.',
+  '10. Contact':'10. التواصل',
+  'If you have questions about this Privacy Policy, contact us at':
+  'إذا كانت لديك أسئلة حول سياسة الخصوصية هذه، يمكنك التواصل معنا عبر:',
+  Object.assign(AR, {
+  '10. Contact': '10. التواصل',
+
+  '“QR Code” is a registered trademark of DENSO WAVE INCORPORATED.':
+  '“QR Code” علامة تجارية مسجلة لشركة DENSO WAVE INCORPORATED.'
+});
+  // Terms of Use
+  'Terms of Use':'شروط الاستخدام',
+  'Terms that apply when you use AroundByte QRcode Studio.':
+  'الشروط التي تنطبق عند استخدامك AroundByte QRcode Studio.',
+  '1. Acceptance of These Terms':'1. الموافقة على هذه الشروط',
+  'By accessing or using AroundByte QRcode Studio, you agree to these Terms of Use. If you do not agree with these terms, please do not use the website.':
+  'من خلال الوصول إلى AroundByte QRcode Studio أو استخدامه، فإنك توافق على شروط الاستخدام هذه. إذا كنت لا توافق على هذه الشروط، يرجى عدم استخدام الموقع.',
+  '2. About the Service':'2. حول الخدمة',
+  'AroundByte QRcode Studio provides browser-based tools for creating, customizing, scanning and managing QR codes and barcodes. Features may include individual code generation, barcode format validation, camera or image scanning, and bulk generation.':
+  'يوفر AroundByte QRcode Studio أدوات تعمل عبر المتصفح لإنشاء رموز QR والباركود وتخصيصها ومسحها وإدارتها. وقد تشمل الميزات إنشاء الرموز بشكل فردي، والتحقق من تنسيقات الباركود، والمسح بالكاميرا أو الصور، والإنشاء الجماعي.',
+  '3. Permitted Use':'3. الاستخدام المسموح به',
+  'You may use the website for lawful personal, educational and business purposes. You must not use the service to:':
+  'يمكنك استخدام الموقع لأغراض شخصية أو تعليمية أو تجارية مشروعة. ويُحظر استخدام الخدمة من أجل:',
+  'Break any applicable law or regulation.':'مخالفة أي قانون أو لائحة معمول بها.',
+  'Create or distribute fraudulent, deceptive, harmful or misleading codes.':
+  'إنشاء أو توزيع رموز احتيالية أو خادعة أو ضارة أو مضللة.',
+  'Create or distribute phishing links, malware or content intended to compromise another person or system.':
+  'إنشاء أو توزيع روابط تصيد احتيالي أو برمجيات ضارة أو محتوى يهدف إلى اختراق شخص آخر أو نظام آخر.',
+  'Interfere with the website, attempt unauthorized access, or disrupt its operation.':
+  'التدخل في عمل الموقع أو محاولة الوصول غير المصرح به أو تعطيل تشغيله.',
+  'Violate the rights, privacy or intellectual property of another person or organization.':
+  'انتهاك حقوق أو خصوصية أو ملكية فكرية لأي شخص أو مؤسسة أخرى.',
+  '4. Your Responsibilities':'4. مسؤولياتك',
+  'You are responsible for the information and content you enter, encode, scan, download or distribute. You must ensure that you have the necessary rights and permissions to use that content.':
+  'أنت مسؤول عن المعلومات والمحتوى الذي تدخله أو ترمّزه أو تمسحه أو تنزّله أو توزعه. ويجب عليك التأكد من امتلاكك الحقوق والتصاريح اللازمة لاستخدام ذلك المحتوى.',
+  'You are also responsible for checking the accuracy and functionality of generated codes before printing, publishing, distributing or using them for important purposes.':
+  'أنت مسؤول أيضاً عن التحقق من دقة الرموز التي يتم إنشاؤها وعملها قبل طباعتها أو نشرها أو توزيعها أو استخدامها لأغراض مهمة.',
+  '5. Local Processing and User Content':'5. المعالجة المحلية ومحتوى المستخدم',
+  'The tools are designed to process content locally in your browser where supported. You remain responsible for keeping copies of important input data and downloaded results. Please review our Privacy Policy for more information about data handling.':
+  'صُممت الأدوات لمعالجة المحتوى محلياً في متصفحك حيثما كان ذلك مدعوماً. وتظل مسؤولاً عن الاحتفاظ بنسخ من بيانات الإدخال المهمة والنتائج التي تقوم بتنزيلها. يرجى مراجعة سياسة الخصوصية لمزيد من المعلومات حول التعامل مع البيانات.',
+  '6. Intellectual Property':'6. الملكية الفكرية',
+  "The website's original design, branding, text, graphics and software are protected by applicable intellectual property laws. These terms do not transfer ownership of the website or its original materials to you.":
+  'إن التصميم الأصلي للموقع والعلامة التجارية والنصوص والرسومات والبرمجيات محمية بموجب قوانين الملكية الفكرية المعمول بها. ولا تنقل هذه الشروط إليك ملكية الموقع أو مواده الأصلية.',
+  'You may use generated QR codes and barcodes for lawful purposes. You must not imply that you own or are affiliated with the AroundByte brand unless you have permission.':
+  'يمكنك استخدام رموز QR والباركود التي يتم إنشاؤها لأغراض مشروعة. ويجب ألا توحي بأنك تملك علامة AroundByte التجارية أو أنك تابع لها دون الحصول على إذن.',
+  '7. Third-Party Services and Links':'7. خدمات وروابط الجهات الخارجية',
+  'The website may include links to external websites or services, including advertising services. These third parties operate independently and may have their own terms and privacy policies. We are not responsible for their content, availability or practices.':
+  'قد يتضمن الموقع روابط إلى مواقع أو خدمات خارجية، بما في ذلك خدمات الإعلان. تعمل هذه الجهات بشكل مستقل وقد تكون لديها شروط وسياسات خصوصية خاصة بها. ونحن غير مسؤولين عن محتواها أو توفرها أو ممارساتها.',
+  '8. Availability and Changes':'8. التوفر والتغييرات',
+  'We may update, modify, suspend or discontinue any part of the website or its features at any time. We do not guarantee uninterrupted availability or compatibility with every device, browser or environment.':
+  'يجوز لنا تحديث أي جزء من الموقع أو ميزاته أو تعديله أو تعليقه أو إيقافه في أي وقت. ولا نضمن توفر الموقع دون انقطاع أو توافقه مع جميع الأجهزة أو المتصفحات أو البيئات.',
+  '9. Disclaimer of Warranties':'9. إخلاء مسؤولية الضمانات',
+  'The website and its tools are provided on an “as is” and “as available” basis, to the extent permitted by law. We make no guarantee that the service will be error-free, uninterrupted, suitable for every purpose or that every generated or scanned code will work with every device or scanner.':
+  'يُقدم الموقع وأدواته على أساس "كما هي" و"حسب التوفر"، إلى الحد الذي يسمح به القانون. ولا نقدم أي ضمان بأن الخدمة ستكون خالية من الأخطاء أو متاحة دون انقطاع أو مناسبة لكل غرض، أو بأن كل رمز يتم إنشاؤه أو مسحه سيعمل مع جميع الأجهزة أو الماسحات.',
+  '10. Limitation of Liability':'10. حدود المسؤولية',
+  'To the extent permitted by applicable law, AroundByte shall not be liable for indirect, incidental, special or consequential loss or damage arising from your use of, inability to use, or reliance on the website or its output. This includes issues caused by inaccurate input, unreadable codes, scanning failures or third-party services.':
+  'إلى الحد الذي يسمح به القانون المعمول به، لا تتحمل AroundByte المسؤولية عن الخسائر أو الأضرار غير المباشرة أو العرضية أو الخاصة أو التبعية الناتجة عن استخدامك للموقع أو عدم قدرتك على استخدامه أو اعتمادك على الموقع أو مخرجاته. ويشمل ذلك المشكلات الناتجة عن إدخال بيانات غير دقيقة أو رموز غير قابلة للقراءة أو فشل المسح أو خدمات الجهات الخارجية.',
+  '11. Privacy':'11. الخصوصية',
+  'Your use of the website is also subject to our':'يخضع استخدامك للموقع أيضاً لسياسة',
+  '12. Changes to These Terms':'12. التغييرات على هذه الشروط',
+  'We may revise these Terms of Use from time to time. Updated terms will be published on this page with a revised date. Your continued use of the website after changes are published means you accept the updated terms, to the extent permitted by law.':
+  'قد نقوم بمراجعة شروط الاستخدام هذه من وقت لآخر. وسيتم نشر الشروط المحدثة على هذه الصفحة مع تعديل التاريخ. ويعني استمرارك في استخدام الموقع بعد نشر التغييرات موافقتك على الشروط المحدثة، إلى الحد الذي يسمح به القانون.',
+  '13. Contact':'13. التواصل',
+  'For questions about these terms, contact us at':
+  'للاستفسارات المتعلقة بهذه الشروط، يمكنك التواصل معنا عبر:',
+
+  // Disclaimer
+  'Important information about using our QR code and barcode tools.':
+  'معلومات مهمة حول استخدام أدوات رموز QR والباركود.',
+  '1. General Information':'1. معلومات عامة',
+  'AroundByte QRcode Studio provides browser-based tools for creating, customizing, scanning and managing QR codes and barcodes. The tools are provided for general informational and practical purposes.':
+  'يوفر AroundByte QRcode Studio أدوات تعمل عبر المتصفح لإنشاء رموز QR والباركود وتخصيصها ومسحها وإدارتها. وتُقدم هذه الأدوات لأغراض معلوماتية وعملية عامة.',
+  '2. Accuracy and Reliability':'2. الدقة والموثوقية',
+  'We do not guarantee that every generated QR code or barcode will work with every scanner, device, application or environment. Results may depend on the selected format, encoded content, printing quality, code size, contrast and scanning conditions.':
+  'لا نضمن أن كل رمز QR أو باركود يتم إنشاؤه سيعمل مع جميع أجهزة المسح أو الأجهزة أو التطبيقات أو البيئات. فقد تعتمد النتائج على التنسيق المحدد والمحتوى المشفّر وجودة الطباعة وحجم الرمز والتباين وظروف المسح.',
+  '3. User Responsibility':'3. مسؤولية المستخدم',
+  'You are responsible for ensuring that the information you enter and encode is accurate and appropriate for your intended use. Always test generated codes before printing, publishing, distributing or relying on them for important activities.':
+  'أنت مسؤول عن التأكد من أن المعلومات التي تدخلها وترمّزها دقيقة ومناسبة للغرض الذي تريده. اختبر دائماً الرموز التي يتم إنشاؤها قبل طباعتها أو نشرها أو توزيعها أو الاعتماد عليها في الأنشطة المهمة.',
+  '4. Scanning and Decoded Content':'4. المسح والمحتوى المفكوك',
+  'Scanned codes may contain links, contact information, text or other content. We do not control or verify the content of codes you choose to scan. Review decoded information carefully and only open links or take actions when you trust the source.':
+  'قد تحتوي الرموز التي يتم مسحها على روابط أو معلومات اتصال أو نصوص أو محتوى آخر. نحن لا نتحكم في محتوى الرموز التي تختار مسحها ولا نتحقق منه. راجع المعلومات المستخرجة بعناية، ولا تفتح الروابط أو تتخذ أي إجراء إلا عندما تثق بالمصدر.',
+  '5. Local Browser Processing':'5. المعالجة المحلية في المتصفح',
+  'The tools are designed to process your content and files locally in your browser where supported. However, browser extensions, device settings or third-party software may affect how your device operates. You are responsible for maintaining the security of your device and browser.':
+  'صُممت الأدوات لمعالجة المحتوى والملفات محلياً في متصفحك حيثما كان ذلك مدعوماً. ومع ذلك، قد تؤثر إضافات المتصفح أو إعدادات الجهاز أو برامج الجهات الخارجية في طريقة عمل جهازك. وتقع على عاتقك مسؤولية الحفاظ على أمان جهازك ومتصفحك.',
+  '6. Availability and Technical Limitations':'6. التوفر والقيود التقنية',
+  'We do not guarantee that the website will always be available, free from errors or fully compatible with every device or browser. Features may be changed, limited or discontinued without notice.':
+  'لا نضمن أن يكون الموقع متاحاً دائماً أو خالياً من الأخطاء أو متوافقاً بشكل كامل مع جميع الأجهزة والمتصفحات. وقد يتم تغيير الميزات أو تقييدها أو إيقافها دون إشعار مسبق.',
+  '7. Limitation of Liability':'7. حدود المسؤولية',
+  'To the extent permitted by applicable law, AroundByte shall not be responsible for losses or damages resulting from the use of, inability to use, or reliance on the tools or their output, including errors in generated codes, scanning results or user-provided information.':
+  'إلى الحد الذي يسمح به القانون المعمول به، لا تتحمل AroundByte المسؤولية عن الخسائر أو الأضرار الناتجة عن استخدام الأدوات أو عدم القدرة على استخدامها أو الاعتماد عليها أو على مخرجاتها، بما في ذلك الأخطاء في الرموز التي يتم إنشاؤها أو نتائج المسح أو المعلومات التي يقدمها المستخدم.',
+  '8. External Links':'8. الروابط الخارجية',
+  'Links to external websites are provided for convenience. We do not control and are not responsible for the content, availability, privacy practices or terms of external websites.':
+  'يتم توفير روابط المواقع الخارجية لتسهيل الاستخدام. نحن لا نتحكم في محتوى المواقع الخارجية أو توفرها أو ممارسات الخصوصية أو الشروط الخاصة بها، ولا نتحمل المسؤولية عنها.',
+  '9. Changes to This Disclaimer':'9. التغييرات على إخلاء المسؤولية',
+  'We may update this Disclaimer when necessary. Changes will be published on this page with an updated date.':
+  'قد نقوم بتحديث إخلاء المسؤولية هذا عند الضرورة. وسيتم نشر التغييرات على هذه الصفحة مع تحديث التاريخ.',
+  'If you have questions about this Disclaimer, contact us at':
+  'إذا كانت لديك أسئلة حول إخلاء المسؤولية هذا، يمكنك التواصل معنا عبر:',
+
+  // Contact
+  'Questions, feedback or suggestions? We would be happy to hear from you.':
+  'هل لديك أسئلة أو ملاحظات أو اقتراحات؟ يسعدنا التواصل معك.',
+  'Get in Touch':'تواصل معنا',
+  'Thank you for using AroundByte QRcode Studio. If you have questions, comments or suggestions about the website, please contact us by email.':
+  'شكراً لاستخدامك AroundByte QRcode Studio. إذا كانت لديك أسئلة أو تعليقات أو اقتراحات حول الموقع، يرجى التواصل معنا عبر البريد الإلكتروني.',
+  'For problems while creating, customizing or scanning QR codes and barcodes, please include a description of the issue, the tool you were using and the browser you use. This helps us understand and investigate the problem.':
+  'إذا واجهت مشكلة أثناء إنشاء رموز QR أو الباركود أو تخصيصها أو مسحها، يرجى تضمين وصف للمشكلة واسم الأداة التي كنت تستخدمها والمتصفح الذي تستخدمه. سيساعدنا ذلك على فهم المشكلة والتحقيق فيها.',
+  'Email Support':'الدعم عبر البريد الإلكتروني',
+  'Business Inquiries and Partnerships':'استفسارات الأعمال والشراكات',
+  'For business inquiries, partnerships or other professional matters, you can reach us using the same email address.':
+  'للاستفسارات التجارية أو الشراكات أو المسائل المهنية الأخرى، يمكنك التواصل معنا باستخدام عنوان البريد الإلكتروني نفسه.',
+  'About the Service':'حول الخدمة',
+  'AroundByte QRcode Studio is a browser-based toolkit for creating, customizing, scanning and managing QR codes and barcodes.':
+  'AroundByte QRcode Studio مجموعة أدوات تعمل عبر المتصفح لإنشاء رموز QR والباركود وتخصيصها ومسحها وإدارتها.'
+});
+
 const ATTRS=['placeholder','title','aria-label','alt'];
 export function initI18n(){
  let lang='en';try{lang=localStorage.getItem('abqs-lang')||'en'}catch{}
