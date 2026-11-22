@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AroundByte QRcode Studio</title>
+<meta name="description" content="Generate, customize, scan and bulk-create professional QR codes and barcodes in your browser. PNG, SVG and PDF downloads.">
+<meta property="og:type" content="website"><meta property="og:site_name" content="AroundByte QRcode Studio"><meta property="og:title" content="AroundByte QRcode Studio">
+<link rel="icon" type="image/png" href="assets/aroundbyte-qrcode-studio-logo.png">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/qr.css">
+<script>try{var th=localStorage.getItem('abqs-theme');if(th)document.documentElement.dataset.theme=th}catch(e){}</script>
+</head>
+<body>
+<div class="app">
+  <header class="site-header">
+    <a class="brand" href="#/" aria-label="AroundByte QRcode Studio — Home"><img class="brand-logo" src="assets/aroundbyte-qrcode-studio-logo.png" width="1685" height="934" alt="AroundByte QRcode Studio"></a>
+    <nav class="primary-nav" id="mainNav" aria-label="Main navigation"></nav>
+  </header>
+  <main><section id="view"></section>
+    <footer class="app-footer">
+      <span class="footer-privacy">All processing takes place in your browser. Images and designs are never uploaded.</span>
+      <nav class="app-footer-links" aria-label="Footer"><a href="https://cardstudio.aroundbyte.com/about.html">About Us</a><a href="https://cardstudio.aroundbyte.com/privacy.html">Privacy Policy</a><a href="https://cardstudio.aroundbyte.com/terms.html">Terms of Use</a><a href="https://cardstudio.aroundbyte.com/disclaimer.html">Disclaimer</a><a href="https://cardstudio.aroundbyte.com/contact.html">Contact</a></nav>
+      <span>© 2026 AroundByte</span>
+    </footer>
+  </main>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="vendor/qrcode.js"></script>
+<script src="vendor/jsbarcode.min.js"></script>
+<script src="vendor/jszip.min.js"></script>
+<script src="vendor/pdf-lib.min.js"></script>
+<script src="vendor/jsqr.js"></script>
+<script src="vendor/zxing.min.js"></script>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
