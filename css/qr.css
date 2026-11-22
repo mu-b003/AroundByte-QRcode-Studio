@@ -104,3 +104,17 @@ a.btn{text-decoration:none}
 .art-bar svg{width:min(235px,88%)}
 @media(max-width:900px){.hero{gap:16px;padding:12px 0 18px}.hero-art{padding:12px;grid-template-columns:1fr 1fr;align-items:center}.art-qr svg{width:min(160px,38vw)}.art-bar svg{width:min(230px,100%)}}
 @media(max-width:560px){.hero{padding:8px 0 16px}.hero h1{font-size:clamp(26px,8vw,34px)}.hero-art{gap:8px}.hero-cta .btn{padding:9px 12px;font-size:12px}}
+
+/* AroundByte tool card artwork */
+.tool-card{padding:0;gap:0}
+.tool-card-image{
+ display:block;width:100%;aspect-ratio:16/9;
+ object-fit:contain;object-position:center;
+ background:#080808;border-bottom:1px solid rgba(255,200,0,.18)
+}
+.tool-card-content{
+ display:flex;flex-direction:column;gap:6px;
+ padding:14px 16px 16px;min-width:0
+}
+.tool-card-content b{font-size:15px;font-weight:600}
+.tool-card-content .d{color:var(--mu);font-size:13px;line-height:1.6}

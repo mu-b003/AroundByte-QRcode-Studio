@@ -10,7 +10,35 @@ const QR_TOOLS=[['qr','qr','QR Code Generator','All content types in one place.'
 const DESC={EAN13:'Retail product barcodes.',EAN8:'Compact retail barcodes.',UPCA:'North American retail.',UPCE:'Short-form UPC.',CODE128:'Dense alphanumeric data.',CODE39:'Industrial labels.',ITF14:'Shipping cartons (GTIN-14).',ITF:'Numeric pairs, even length.',CODABAR:'Libraries and labs.'};
 const BC_TOOLS=[...Object.entries(BC_PAGES).map(([s,k])=>['bars',s,FORMATS[k].n+' Generator',DESC[k],'#/barcode/'+s]),['scan','bscan','Barcode Scanner','Scan 1D barcodes.','#/scan/barcode']];
 const MORE=[['layers','bq','Bulk QR Code Generator','CSV or list → ZIP.','#/bulk/qr'],['layers','bb','Bulk Barcode Generator','CSV or list → ZIP.','#/bulk/barcode']];
-const card=t=>`<a class="tile tool-card" href="${t[4]}"><span class="ico">${icon(t[0])}</span><b>${t[2]}</b><span class="d">${t[3]}</span></a>`;
+const CARD_IMAGES={
+ qr:'QR Code Generator.png',
+ url:'URL QR Generator.png',
+ text:'Text QR Generator.png',
+ wifi:'Wi-Fi QR Generator.png',
+ contact:'Contact QR Generator.png',
+ email:'Email QR Generator.png',
+ phone:'Phone QR Generator.png',
+ sms:'SMS QR Generator.png',
+ designer:'Custom QR Designer.png',
+ scan:'QR Code Scanner.png',
+ ean13:'EAN-13 Generator.png',
+ ean8:'EAN-8 Generator.png',
+ upca:'UPC-A Generator.png',
+ upce:'UPC-E Generator.png',
+ code128:'Code 128 Generator.png',
+ code39:'Code 39 Generator.png',
+ itf14:'ITF-14 Generator.png',
+ itf:'ITF (Interleaved 2 of 5) Generator.png',
+ codabar:'Codabar Generator.png',
+ bscan:'Barcode Scanner.png',
+ bq:'Bulk QR Code Generator.png',
+ bb:'Bulk Barcode Generator.png'
+};
+const card=t=>{
+ const image=CARD_IMAGES[t[1]];
+ if(!image)return `<a class="tile tool-card" href="${t[4]}"><span class="ico">${icon(t[0])}</span><b>${t[2]}</b><span class="d">${t[3]}</span></a>`;
+ return `<a class="tile tool-card" href="${t[4]}"><img class="tool-card-image" src="assets/tool-cards/${image}" alt="${esc(t[2])}" loading="lazy" decoding="async"><span class="tool-card-content"><b>${t[2]}</b><span class="d">${t[3]}</span></span></a>`;
+};
 const menu=(items)=>items.map(t=>`<a href="${t[4]}">${icon(t[0])}${t[2].replace(' Generator','')}</a>`).join('');
 $('#mainNav').innerHTML=`<a href="#/" data-r="home">Home</a>
  <details class="dd"><summary>QR Code Tools <span class="chevron" aria-hidden="true">⌄</span></summary><div class="dd-nav">${menu(QR_TOOLS)}</div></details>
